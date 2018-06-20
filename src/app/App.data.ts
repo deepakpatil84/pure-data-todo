@@ -5,7 +5,7 @@ export enum Filter{
 }
 export default class AppData extends PureData.Data {
 
-    title: String = 'Todo List'
+    title: string = 'Todo List'
     todos: Todo[] = []
     filter: Filter = Filter.ALL
 

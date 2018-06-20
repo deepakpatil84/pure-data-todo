@@ -7,7 +7,7 @@ export default class Add extends PureData.Component<AppData>{
         super(props,context)
         this.handleAdd =this.handleAdd.bind(this)
     }
-    private handleAdd(){
+    handleAdd(){
         if(this.input != null){
             if(this.input.value){
                 this.props.data.addTodo(this.input.value)

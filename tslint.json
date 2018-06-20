@@ -1,9 +1,11 @@
 {
-  "extends": [],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules":{
+    "member-access": false,
+    "ordered-imports": false
+  },
   "linterOptions": {
     "exclude": [
-      "*.tsx",
-      "*.ts",
       "config/**/*.js",
       "node_modules/**/*.ts"
     ]

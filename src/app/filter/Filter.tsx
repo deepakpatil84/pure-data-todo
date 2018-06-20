@@ -19,7 +19,7 @@ export default class Filter extends PureData.Component<AppData>{
         this.props.data.set({ filter: F.ACTIVE })
     }
     render() {
-        let data = this.props.data
+        const data = this.props.data
         return <div>
             Filter:
             <button disabled={data.filter === F.ALL} onClick={this.handleAll}>All</button>

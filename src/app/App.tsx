@@ -1,18 +1,20 @@
 
-import * as PureData from 'pure-data'
-import AppData,{Filter as F} from './App.data'
-import * as React from 'react'
+
 import Add from './add/Add'
-import Todo from './todo/Todo'
+import AppData,{Filter as F} from './App.data'
 import Filter from './filter/Filter'
+import * as PureData from 'pure-data'
+import * as React from 'react'
+import Todo from './todo/Todo'
+
 import './App.css'
 
 
 export default class App extends PureData.Component<AppData>{
 
     render(): JSX.Element {
-        let data = this.props.data
-        let todos = data.todos.filter((todo)=>{
+        const data = this.props.data
+        const todos = data.todos.filter((todo)=>{
             return data.filter === F.ALL ? true :
                 data.filter === F.COMPLETED ?
                     todo.completed : !todo.completed
