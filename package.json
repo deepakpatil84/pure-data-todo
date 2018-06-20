@@ -2,7 +2,9 @@
   "name": "pure-data-app",
   "version": "0.1.0",
   "private": true,
+  "main": "./index.ts",
   "dependencies": {
+    "pure-data": "0.0.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts-ts": "2.16.0"
@@ -18,7 +20,6 @@
     "@types/node": "^10.3.4",
     "@types/react": "^16.4.1",
     "@types/react-dom": "^16.0.6",
-    "pure-data": "0.0.1",
     "typescript": "^2.9.2"
   }
 }
